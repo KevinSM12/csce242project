@@ -1,3 +1,5 @@
+import './css/header.css';
+
 const header = ()=>{
     return (
         <><h3>Basketball Records Elite</h3><div id="logo-div">
@@ -9,11 +11,11 @@ const header = ()=>{
                     <div></div>
                 </div>
                 <ul id="nav-items" class="columns hide">
-                    <a href="index.html" class="one"><li><p>Home</p></li></a>
-                    <a href="records.html" class="one"><li><p>Records</p></li></a>
-                    <a href="about.html" class="one"><li><p>About Us</p></li></a>
-                    <a href="form.html" class="one"><li><p>Add Form</p></li></a>
-                    <a href="community.html" class="one"><li><p>Community</p></li></a>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/recordspage">Reocrds</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/form">Additiong Form</Link></li>
+                    <li><Link to="/community">Community</Link></li>
                 </ul>
             </nav></>
     );
