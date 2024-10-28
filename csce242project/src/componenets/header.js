@@ -1,4 +1,5 @@
-import './css/header.css';
+import '../css/header.css';
+import { Outlet, Link } from "react-router-dom";
 
 const header = ()=>{
     return (
@@ -14,7 +15,7 @@ const header = ()=>{
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/recordspage">Reocrds</Link></li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="/form">Additiong Form</Link></li>
+                    <li><Link to="/form">Addition Form</Link></li>
                     <li><Link to="/community">Community</Link></li>
                 </ul>
             </nav></>
