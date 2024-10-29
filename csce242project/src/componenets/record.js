@@ -93,3 +93,5 @@ const record = (record)=>{
 
     return section;
 }
+
+export default record;

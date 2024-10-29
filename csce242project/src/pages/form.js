@@ -72,3 +72,5 @@ const form = ()=>{
           </section>
     );
 }
+
+export default form;

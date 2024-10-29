@@ -9,3 +9,4 @@ const message = ()=>{
         </p>
     );
 }
+export default message;

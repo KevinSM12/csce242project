@@ -6,11 +6,11 @@ const community = ()=>{
         <div id="community-content">
             <h1>Discussion</h1>
             <div id="disscussion">
-                <div id="discus-brd">
-                    <p id="discus-brd"></p>
-                </div>
+                <p id="discus-brd"></p>
                 <Message />
             </div>
         </div>
     );
 }
+
+export default community;
