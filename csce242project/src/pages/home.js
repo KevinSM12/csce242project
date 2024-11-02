@@ -1,31 +1,24 @@
 import '../css/home.css';
-import { Outlet, Link } from "react-router-dom";
+import Link from "react-router-dom";
+import League from "league";
 
 const home = ()=>{
     return (
         <><div id="content">
             <h2>Different Leagues</h2>
             <div id="leagues" class="columns">
-                <Link to="/recordspage"><section id="league-nba">
-                    <h1>NBA</h1>
-                    <img src="images/nba-cover-1.jpg" />
-                    <img src="images/nba-cover-2.jpg" />
-                </section></Link>
-                <Link to="/recordspage"><section id="league-ncaa">
-                    <h1>NCAA</h1>
-                    <img src="images/NCAA-cover-1.jpg" />
-                    <img src="images/NCAA-cover-2.jpg" />
-                </section></Link>
-                <Link to="/recordspage"><section id="league-wnba">
-                    <h1>WNBA</h1>
-                    <img src="images/WNBA-cover-1.jpg" />
-                    <img src="images/WNBA-cover-2.jpg" />
-                </section></Link>
-                <Link to="/recordspage"><section id="league-fiba">
-                    <h1>FIBA</h1>
-                    <img src="images/FIBA-cover-1.jpg" />
-                    <img src="images/FIBA-cover-2.jpg" />
-                </section></Link>
+                <Link to="/recordspage">
+                    <League name="NBA" cover1="../images/nba-cover-1" cover2="../image/nba-cover-2" />
+                </Link>
+                <Link to="/recordspage">
+                    <League name="NCAA" cover1="../images/NCAA-cover-1" cover2="../image/NCAA-cover-2" />
+                </Link>
+                <Link to="/recordspage">
+                    <League name="WNBA" cover1="../images/WNBA-cover-1" cover2="../image/WNBA-cover-2" />
+                </Link>
+                <Link to="/recordspage">
+                    <League name="FIBA" cover1="../images/FIBA-cover-1" cover2="../image/FIBA-cover-2" />
+                </Link>
             </div>
             <div id="lower-half" class="columns">
                 <a href="records.html" class="one"><section>
