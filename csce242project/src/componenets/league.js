@@ -3,11 +3,11 @@ import { Outlet,Link } from "react-router-dom";
 
 const league = (league)=>{
     return(
-    <Link to="/recordspage"><section className="league">
-        <h1>{league.name}</h1>
-        <img src={league.cover1} />
-        <img src={league.cover2} />
-    </section></Link>
+        <Link to="/recordspage" className="leaguelink"><section className="league">
+            <h1>{league.name}</h1>
+            <img src={league.cover1} />
+            <img src={league.cover2} />
+        </section></Link>
     );
 }
 

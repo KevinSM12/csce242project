@@ -17,6 +17,28 @@ body{
 
 #lower-half{
     margin-top:15px;
+    padding-bottom:15px;
     background:var(--sec);
 }
 
+#lower-half h4{
+    color:var(--white);
+}
+
+#lower-half section{
+    margin-left:175px;
+    margin-right:175px;
+}
+
+.recordlink{
+    text-decoration:none;
+}
+
+@media only screen and (min-width:600px){
+    .columns{
+        display:flex;
+    }
+    .one{
+        flex:1;
+    }
+}

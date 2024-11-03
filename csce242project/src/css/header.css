@@ -21,6 +21,9 @@
 #logo-div{
     display:flex;
     justify-content: space-between;
+    position:absolute;
+    left:94%;
+    top:1%;;
 }
 
 #logo{
@@ -78,7 +81,7 @@
     #logo{
         position:absolute;
         left:94%;
-        top:0.5%;;
+        top:1%;;
     }
     .hide-big{
         display:none;
