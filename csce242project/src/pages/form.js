@@ -2,9 +2,9 @@ import '../css/form.css';
 
 const form = ()=>{
     return (
-        <section class="info-section">
+        <section className="info-section">
             <h3>Record Form</h3>
-            <div class="columns">
+            <div className="columns">
               <form
                 id="contact-form"
                 action="https://api.web3forms.com/submit"

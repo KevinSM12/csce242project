@@ -1,3 +1,8 @@
-body {
-
+:root{
+    --prim:#DDA7A7;
+    --sec:maroon;
+    --white:#ffffff;
+    --black:#000000;
+    --grey:grey;
 }
+

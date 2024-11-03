@@ -6,8 +6,8 @@ const recordspage = ()=>{
         <div id="content">
             <h1>Elite Records</h1>
             <hr />
-            <div id="records" class="columns container">
-                
+            <div id="records" className="columns container">
+           
             </div>
             <hr />
         </div>

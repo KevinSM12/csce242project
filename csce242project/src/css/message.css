@@ -1,0 +1,15 @@
+:root{
+    --prim:#DDA7A7;
+    --sec:maroon;
+    --white:#ffffff;
+    --black:#000000;
+    --grey:grey;
+}
+
+#dis{
+    margin-left:30px;
+}
+
+#dis-txt{
+    width:72%;
+}

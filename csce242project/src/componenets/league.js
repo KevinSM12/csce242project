@@ -1,12 +1,13 @@
-import '../css/league.css'
+import '../css/league.css';
+import { Outlet,Link } from "react-router-dom";
 
 const league = (league)=>{
     return(
-    <section className="league">
+    <Link to="/recordspage"><section className="league">
         <h1>{league.name}</h1>
         <img src={league.cover1} />
         <img src={league.cover2} />
-    </section>
+    </section></Link>
     );
 }
 

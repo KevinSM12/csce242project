@@ -1,25 +1,18 @@
-import '../css/record.css'
+import '../css/record.css';
+import useState from "react";
 
 const record = (record)=>{
     const section = document.createElement("section");
-    section.classList.add("one","item");
-    const recordDiv = document.createElement("div");
-    recordDiv.classList.add("record-section");
-    section.append(recordDiv);
-    
-    const img = document.createElement("img");
-    img.src = record.record_image;
-    recordDiv.append(img);
-    
-    const title = document.createElement("h4");
-    title.innerHTML = record.record_title;
-    recordDiv.append(title); 
+    <section onClick={modalpopout}  className="one item">
+        <div className="record-section">
+            <img src={record.recordImage} />
+            <h4>{record.recordTitle}</h4>
+            <p>{record.recordDescription}</p>
+            
+        </div>
+    </section>
 
-    const desc = document.createElement("p");
-    desc.innerHTML = record.record_description;
-    recordDiv.append(desc); 
-
-    section.onclick = () => {
+    const modalpopout = () => {
         console.log("Section clicked");
         const modal = document.createElement("div");
         modal.classList.add("modal");
@@ -90,8 +83,6 @@ const record = (record)=>{
             }
         };
     };
-
-    return section;
 }
 
 export default record;

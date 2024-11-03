@@ -1,5 +1,13 @@
+:root{
+    --prim:#DDA7A7;
+    --sec:maroon;
+    --white:#ffffff;
+    --black:#000000;
+    --grey:grey;
+}
+
 #main-header{
-    background-color:var(--sec);
+    background:var(--sec);
     margin:0px;
     padding-top:5px;
 }
@@ -21,13 +29,13 @@
 }
 
 #toggle-nav{
-    background-color:var(--white);
+    background:var(--white);
     border:var(--sec) solid 1px;
     width:40px;
 }
 
 #toggle-nav div{
-    background-color:var(--black);
+    background:var(--black);
     width:25px;
     height:2px;
     margin:6px 0;
@@ -44,7 +52,7 @@
 }
 
 #main-nav li{
-    background-color:var(--white);
+    background:var(--white);
     list-style-type: none;
     text-align:center;
     border:var(--sec) solid 1px;
@@ -56,6 +64,10 @@
     color:var(--sec);
 }
 
+.hide{
+    display:none;
+}
+
 @media only screen and (min-width:600px){
     .columns{
         display:flex;
@@ -65,7 +77,10 @@
     }
     #logo{
         position:absolute;
-        left:95%;
-        top:3.5%;;
+        left:94%;
+        top:0.5%;;
+    }
+    .hide-big{
+        display:none;
     }
 }

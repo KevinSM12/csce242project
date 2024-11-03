@@ -1,0 +1,28 @@
+:root{
+    --prim:#DDA7A7;
+    --sec:maroon;
+    --white:#ffffff;
+    --black:#000000;
+    --grey:grey;
+}
+
+.league h1{
+    color:var(--prim);
+    text-decoration: none;
+}
+
+.league{
+    width:auto;
+    text-align:center;
+    background:var(--sec);
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.league img{
+    width:100%;
+}
+
+@media only screen and (min-width:600px){
+    
+}

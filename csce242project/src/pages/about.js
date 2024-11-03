@@ -5,7 +5,7 @@ const about = ()=>{
         <div id="about">
             <h1>About Us</h1>
             <div id="about-img">
-                <img src="images/team.jpg" />
+                <img src="../images/team.jpg" />
             </div>
             <h3>The Team</h3>
             <hr />
@@ -20,11 +20,8 @@ const about = ()=>{
             <div id="contact">
                 <h4>Phone#: (555)-555-5555</h4>
                 <h4>Email: eliterecords@email.com</h4>
-                <p>
-                    <p>Message:</p>
-                    <textarea type="text" id="message"></textarea>
-                </p>
             </div>
+            <hr />
         </div>
     );
 }

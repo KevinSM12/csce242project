@@ -1,0 +1,22 @@
+:root{
+    --prim:#DDA7A7;
+    --sec:maroon;
+    --white:#ffffff;
+    --black:#000000;
+    --grey:grey;
+}
+
+body{
+    background-color: var(--prim);
+}
+
+#content{
+    background:var(--grey);
+    text-align:center;
+}
+
+#lower-half{
+    margin-top:15px;
+    background:var(--sec);
+}
+

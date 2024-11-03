@@ -1,0 +1,58 @@
+:root{
+    --prim:#DDA7A7;
+    --sec:maroon;
+    --white:#ffffff;
+    --black:#000000;
+    --grey:grey;
+}
+
+.info-section {
+    background-color: #595a5c;
+    font-size: 36px;
+    flex: 1;
+    color: white;
+}
+  
+.info-section section {
+    padding: 0 10px;
+    margin: 0 10px;
+    flex: 1;
+}
+
+.info-section img {
+    max-width: 300px;
+}
+
+#email-txt{
+    width:30%;
+}
+
+#league-txt{
+    width:30%;
+}
+
+#record-txt{
+    width:30%;
+}
+
+#rec-hold-txt{
+    width:30%;
+}
+
+#desc-rec-hold-txt{
+    width:75%;
+    height:50px;
+}
+
+#prev-hold-txt{
+    width:30%;
+}
+
+#desc-prev-hold-txt{
+    width:75%;
+    height:50px;
+}
+
+#submit-btn{
+    padding:5px;
+}
