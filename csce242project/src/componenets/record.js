@@ -2,18 +2,31 @@ import '../css/record.css';
 import useState from "react";
 
 const record = (record)=>{
-    const section = document.createElement("section");
-    <section onClick={modalpopout}  className="one item">
-        <div className="record-section">
-            <img src={record.recordImage} />
-            <h4>{record.recordTitle}</h4>
-            <p>{record.recordDescription}</p>
-            
-        </div>
-    </section>
-
+    return(
+        <><section className="item">
+            <div className="record-section">
+                <img src={record.recordImage} />
+                <h4>{record.recordTitle}</h4>
+                <p>{record.recordDescription}</p>
+                
+            </div>
+        </section></>
+    );
+    /*
     const modalpopout = () => {
         console.log("Section clicked");
+        <div className="modal">
+            <div className="modal-content">
+                <h2>{record.recordTitle}</h2>
+                <div className="columns record-holders">
+                    <section className="one holder-section">
+                        <img src="../images/bill-russell.jpg" />
+                        <h4>Current Record Holder: </h4>
+                        <h3>Bill Russell - </h3>
+                    </section>
+                </div>
+            </div>
+        </div>
         const modal = document.createElement("div");
         modal.classList.add("modal");
         document.body.append(modal);
@@ -30,7 +43,7 @@ const record = (record)=>{
         const recordHolders = document.createElement("div");
         recordHolders.classList.add("columns", "record-holders");
         content.append(recordHolders);
-
+        
         const holders = record.record; 
         if (Array.isArray(holders) && holders.length > 0) {
             holders.forEach(holder => {
@@ -82,7 +95,7 @@ const record = (record)=>{
                 document.body.removeChild(modal);
             }
         };
-    };
+    };*/
 }
 
 export default record;
