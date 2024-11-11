@@ -31,19 +31,6 @@
     height:70px;
 }
 
-#toggle-nav{
-    background:var(--white);
-    border:var(--sec) solid 1px;
-    width:40px;
-}
-
-#toggle-nav div{
-    background:var(--black);
-    width:25px;
-    height:2px;
-    margin:6px 0;
-    margin-left:7.5px;
-}
 
 #main-nav{
     width:100%;

@@ -1,42 +1,47 @@
 import '../css/recordspage.css';
 import Record from "../componenets/record";
+import React, {useState, useEffect} from "react";
+import axios from "axios";
 
-const recordspage = ()=>{
+const Recordspage = ()=>{
+    const [records, setRecords] = useState([]);
+
+useEffect(() => {
+    (async () => {
+        try {
+            const response = await axios.get("http://localhost:3001/api/records");
+            console.log("Full response data:", response.data);
+            setRecords(response.data);
+        } catch (error) {
+            console.error("Error fetching records:", error);
+        }
+    })();
+}, []);
+
+
     return (
         <div id="content">
             <h1>Elite Records</h1>
             <hr />
-            <div id="records" className="container">
-                <section className="columns">
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                </section>
-                <section className="columns">
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                </section>
-                <section className="columns">
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                </section>
-                <section className="columns">
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                </section>
-                <section className="columns">
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                    <Record className="one" recordImage="../images/most-ass-img-nba.jpg" recordTitle="Most Assists All-Time" recordDescription="This record is given to the player with the most assists throughout their career. This player is one of the best teamates of all time as they give up the glory of scoring to help their team."/>
-                </section>
-                
+            <div id="records" className="container columns">
+                {records.map((record)=>(
+                    <Record
+                    key={record.record_id}
+                    recordImage={record.record_image} 
+                    recordTitle={record.record_title}
+                    recordDesc={record.record_description}
+                    recordHolder={record.record_holder}
+                    holderImage={record.record_holder_image}
+                    holderDesc={record.record_holder_desc}
+                    prevHolder={record.prev_record_holder}
+                    prevImage={record.prev_record_holder_image}
+                    prevDesc={record.prev_record_holder_desc}
+                    />
+                ))}
             </div>
             <hr />
         </div>
     );
 }
 
-export default recordspage;
+export default Recordspage;

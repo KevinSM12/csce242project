@@ -7,6 +7,7 @@ const form = ()=>{
             <div className="columns">
               <form
                 id="contact-form"
+                className="two"
                 action="https://api.web3forms.com/submit"
                 method="POST"
               >
@@ -63,6 +64,7 @@ const form = ()=>{
               </form>
               <iframe
                 id="map"
+                className='one'
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13231.885485422943!2d-81.04234215!3d33.99326909999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb28ada9ede1%3A0x2ff81595639c7de4!2sColonial%20Life%20Arena!5e0!3m2!1sen!2sus!4v1729717332430!5m2!1sen!2sus"
                 allowfullscreen=""
                 loading="lazy"
