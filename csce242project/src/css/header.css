@@ -58,6 +58,38 @@
     display:none;
 }
 
+#toggle-nav{
+    background:var(--white);
+    border:var(--sec) solid 1px;
+    width:40px;
+}
+
+#toggle-nav div{
+    background:var(--black);
+    width:25px;
+    height:2px;
+    margin:6px 0;
+    margin-left:7.5px;
+}
+
+#nav-items{
+    padding-left:0;
+    width:100%;
+}
+
+#nav-items li{
+    background:var(--white);
+    list-style-type: none;
+    text-align:center;
+    border:var(--sec) solid 1px;
+    width:auto;
+}
+
+#nav-items a{
+    text-decoration:none;
+    color:var(--sec);
+}
+
 @media only screen and (min-width:600px){
     .columns{
         display:flex;
