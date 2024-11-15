@@ -5,6 +5,7 @@ import axios from "axios";
 
 const Recordspage = ()=>{
     const [records, setRecords] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
 
 useEffect(() => {
     (async () => {
@@ -18,11 +19,34 @@ useEffect(() => {
     })();
 }, []);
 
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+    };
+
+    const closeAddDialog = () => {
+        setShowAddDialog(false);
+    };
+
+    const updateRecords = (record) => {
+        setRecords((records) => [...records, record]);
+    };
 
     return (
         <div id="content">
             <h1>Elite Records</h1>
             <hr />
+            <button id="add-house" onClick={openAddDialog}>
+        +
+      </button>
+
+      {showAddDialog ? (
+        <AddRecord
+          closeDialog={closeAddDialog}
+          showNewRecord={updateRecords}
+        />
+      ) : (
+        ""
+      )}
             <div id="records" className="container columns">
                 {records.map((record)=>(
                     <Record
