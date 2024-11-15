@@ -2,6 +2,7 @@ import '../css/recordspage.css';
 import Record from "../componenets/record";
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+import AddRecord from "../componenets/addRecord.js";
 
 const Recordspage = ()=>{
     const [records, setRecords] = useState([]);
