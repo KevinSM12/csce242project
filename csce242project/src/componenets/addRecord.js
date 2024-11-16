@@ -53,24 +53,24 @@ const AddRecord = (props) => {
               <input type="text" id="title" name="title" required value={inputs.title || ""} onChange={handleChange} />
             </p>
             <p>
-              <label htmlFor="title">Record Description:</label>
-              <input type="text" id="title" name="title" required value={inputs.title || ""} onChange={handleChange} />
+              <label htmlFor="desc">Record Description:</label>
+              <input type="text" id="desc" name="desc" required value={inputs.title || ""} onChange={handleChange} />
             </p>
             <p>
-              <label htmlFor="title">Record Holder:</label>
-              <input type="text" id="title" name="title" required value={inputs.title || ""} onChange={handleChange} />
+              <label htmlFor="holder">Record Holder:</label>
+              <input type="text" id="holder" name="holder" required value={inputs.title || ""} onChange={handleChange} />
             </p>
             <p>
-              <label htmlFor="title">Record Holder Description:</label>
-              <input type="text" id="title" name="title" required value={inputs.title || ""} onChange={handleChange} />
+              <label htmlFor="holderDesc">Record Holder Description:</label>
+              <input type="text" id="holderDesc" name="holderDesc" required value={inputs.title || ""} onChange={handleChange} />
             </p>
             <p>
-              <label htmlFor="title">Previous Record Holder:</label>
-              <input type="text" id="title" name="title" required value={inputs.title || ""} onChange={handleChange} />
+              <label htmlFor="prev">Previous Record Holder:</label>
+              <input type="text" id="prev" name="prev" required value={inputs.title || ""} onChange={handleChange} />
             </p>
             <p>
-              <label htmlFor="title">Previous Record Holder Description:</label>
-              <input type="text" id="title" name="title" required value={inputs.title || ""} onChange={handleChange} />
+              <label htmlFor="prevDesc">Previous Record Holder Description:</label>
+              <input type="text" id="prevDesc" name="prevDesc" required value={inputs.title || ""} onChange={handleChange} />
             </p>
 
             <section className="columns">
