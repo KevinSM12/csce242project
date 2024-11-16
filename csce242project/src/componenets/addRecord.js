@@ -34,8 +34,12 @@ const AddRecord = (props) => {
       props.showNewRecord(await response.json());
       event.target.reset();
       props.closeDialog();
+      console.log(response.status);
+      console.log(response);
     } else {
       setResult("Error adding record");
+      console.log(response.status);
+      console.log(response);
     }
   };
 
