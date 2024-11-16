@@ -31,11 +31,11 @@ const AddRecord = (props) => {
 
     if(response.status == 200){
       setResult("Record successfully added!");
-      props.showNewHouse(await response.json());
+      props.showNewRecord(await response.json());
       event.target.reset();
       props.closeDialog();
     } else {
-      setResult("Error adding house");
+      setResult("Error adding record");
     }
   };
 
