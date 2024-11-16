@@ -93,4 +93,4 @@ const AddRecord = (props) => {
   );
 };
 
-export default AddHousePlan;
+export default AddRecord;
