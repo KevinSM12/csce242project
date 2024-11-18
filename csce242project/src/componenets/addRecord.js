@@ -79,29 +79,11 @@ const AddRecord = (props) => {
 
             <section className="columns">
               <p id="img-prev-section">
-                <img id="img-prev" alt="" src={inputs.recordImage != null ? URL.createObjectURL(inputs.recordImage) : ""}/>
+                <img id="img-prev" alt="" src={inputs.img != null ? URL.createObjectURL(inputs.img) : ""}/>
               </p>
               <p id="img-upload">
-                <label htmlFor="cover-img">Cover Image:</label>
-                <input type="file" id="img" name="cover-img" accept="image/*" onChange={handleImageChange}/>
-              </p>
-            </section>
-            <section className="columns">
-              <p id="img-prev-section">
-                <img id="img-prev" alt="" src={inputs.holderImage != null ? URL.createObjectURL(inputs.holderImage) : ""}/>
-              </p>
-              <p id="img-upload">
-                <label htmlFor="holder-img">Record Holder Image:</label>
-                <input type="file" id="img" name="holder-img" accept="image/*" onChange={handleImageChange}/>
-              </p>
-            </section>
-            <section className="columns">
-              <p id="img-prev-section">
-                <img id="img-prev" alt="" src={inputs.prevImage != null ? URL.createObjectURL(inputs.prevImage) : ""}/>
-              </p>
-              <p id="img-upload">
-                <label htmlFor="prev-img">Previous Record Holder Image:</label>
-                <input type="file" id="img" name="prev-img" accept="image/*" onChange={handleImageChange}/>
+                <label htmlFor="img">Upload Image:</label>
+                <input type="file" id="img" name="img" accept="image/*" onChange={handleImageChange}/>
               </p>
             </section>
             <p>
