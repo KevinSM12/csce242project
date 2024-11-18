@@ -24,11 +24,12 @@ const Record = ({
                 <Popout title="RecordHolders" onClose={togglePopout}>
                     <div className="columns">
                         <section className="one">
+                            <img src={holderImage} alt={recordHolder} />
                             <h3>{recordHolder}</h3>
                             <p>{holderDesc}</p>
                         </section>
                         <section className="one">
-    
+                            <img src={prevImage} alt={prevHolder} />
                             <h3>{prevHolder}</h3>
                             <p>{prevDesc}</p>
                         </section>
