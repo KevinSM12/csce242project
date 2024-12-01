@@ -11,7 +11,7 @@ const Recordspage = ()=>{
 useEffect(() => {
     (async () => {
         try {
-            const response = await axios.get("https://csce242backend.onrender.com/api/records");
+            const response = await axios.get("http://localhost:3001/api/records");
             console.log("Full response data:", response.data);
             setRecords(response.data);
         } catch (error) {
@@ -56,10 +56,10 @@ useEffect(() => {
                     recordTitle={record.record_title}
                     recordDesc={record.record_description}
                     recordHolder={record.record_holder}
-                    holderImage={record.record_holder_image}
+                    //holderImage={record.record_holder_image}
                     holderDesc={record.record_holder_desc}
                     prevHolder={record.prev_record_holder}
-                    prevImage={record.prev_record_holder_image}
+                    //prevImage={record.prev_record_holder_image}
                     prevDesc={record.prev_record_holder_desc}
                     />
                 ))}
