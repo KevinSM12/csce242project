@@ -24,7 +24,7 @@ const AddRecord = (props) => {
     const formData = new FormData(event.target);
     console.log(...formData);
 
-    const response = await fetch("http://localhost:3001/api/records",{
+    const response = await fetch("https://csce242backend.onrender.com/api/records",{
       method:"POST",
       body:formData
     });
