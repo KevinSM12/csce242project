@@ -5,9 +5,13 @@ const RemoveRecord = (props) => {
   const [result, setResult] = useState("");
 
   const RemoveRecord = async() => {
-   const response = await fetch(`https://csce242backend.onrender.com/api/records/${props._id}`,{
-    method:"DELETE"
-   });
+    const response = await fetch(`https://loaclhost:3001/api/records/${props._id}`,{
+     method:"DELETE"
+    });
+  // const RemoveRecord = async() => {
+  //  const response = await fetch(`https://csce242backend.onrender.com/api/records/${props._id}`,{
+  //   method:"DELETE"
+  //  });
 
    if(response.status === 200){
     setResult("Record successfully delete");
@@ -33,7 +37,7 @@ const RemoveRecord = (props) => {
             <h3>Are you sure you want to delete the {props.name}</h3>
             <section>
               <button onClick={props.closeDialog}>No</button>            
-              <button onClick={deleteRecord}>Yes</button>
+              <button onClick={RemoveRecord}>Yes</button>
             </section>
             <span>{result}</span>
           </div>

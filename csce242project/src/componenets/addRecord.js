@@ -24,10 +24,15 @@ const AddRecord = (props) => {
     const formData = new FormData(event.target);
     console.log(...formData);
 
-    const response = await fetch("https://csce242backend.onrender.com/api/records",{
+    const response = await fetch("https://localhost:3001/api/records",{
       method:"POST",
       body:formData
     });
+
+    // const response = await fetch("https://csce242backend.onrender.com/api/records",{
+    //   method:"POST",
+    //   body:formData
+    // });
 
     if(response.status === 200){
       setResult("Record successfully added!");
@@ -52,6 +57,9 @@ const AddRecord = (props) => {
             &times;
           </span>
           <form id="add-property-form" onSubmit={addToServer}>
+            <p id="header">
+              Add Record
+            </p>
             <p>
               <label htmlFor="title">Record title:</label>
               <input type="text" id="title" name="title" required value={inputs.title || ""} onChange={handleChange} />

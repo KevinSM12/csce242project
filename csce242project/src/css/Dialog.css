@@ -4,6 +4,10 @@
   position: relative;
 }
 
+#header{
+  text-align: center;
+}
+
 #add-dialog,
 #edit-dialog,
 #delete-dialog {
