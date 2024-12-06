@@ -30,14 +30,14 @@ const EditRecord = (props) => {
 
     const formData = new FormData(event.target);
     console.log(...formData);
-    const response = await fetch(`https://localhost:3001/api/records/${props._id}`,{
-      method:"PUT",
-      body:formData
-    });
-    // const response = await fetch(`https://csce242backend.onrender.com/api/records/${props._id}`,{
+    // const response = await fetch(`https://localhost:3001/api/records/${props._id}`,{
     //   method:"PUT",
     //   body:formData
     // });
+    const response = await fetch(`https://csce242backend.onrender.com/api/records/${props._id}`,{
+      method:"PUT",
+      body:formData
+    });
 
     if(response.status === 200){
       setResult("Record successfully updated");

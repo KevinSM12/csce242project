@@ -4,14 +4,14 @@ import React, { useState } from "react";
 const RemoveRecord = (props) => {
   const [result, setResult] = useState("");
 
-  const RemoveRecord = async() => {
-    const response = await fetch(`https://loaclhost:3001/api/records/${props._id}`,{
-     method:"DELETE"
-    });
   // const RemoveRecord = async() => {
-  //  const response = await fetch(`https://csce242backend.onrender.com/api/records/${props._id}`,{
-  //   method:"DELETE"
-  //  });
+  //   const response = await fetch(`https://loaclhost:3001/api/records/${props._id}`,{
+  //    method:"DELETE"
+  //   });
+  const RemoveRecord = async() => {
+   const response = await fetch(`https://csce242backend.onrender.com/api/records/${props._id}`,{
+    method:"DELETE"
+   });
 
    if(response.status === 200){
     setResult("Record successfully delete");

@@ -15,8 +15,8 @@ const Recordspage = ()=>{
 useEffect(() => {
     (async () => {
         try {
-            //const response = await axios.get("https://csce242backend.onrender.com/api/records");
-            const response = await axios.get("http://localhost:3001/api/records");
+            const response = await axios.get("https://csce242backend.onrender.com/api/records");
+            // const response = await axios.get("http://localhost:3001/api/records");
             console.log("Full response data:", response.data);
             setRecords(response.data);
         } catch (error) {
